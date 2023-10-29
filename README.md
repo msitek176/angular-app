@@ -1,27 +1,23 @@
-# Zadanie
+# Angular-app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
+It is an simple app with list of people. There is possibility to add and modify existing person. The implementation was carried out in accordance with good practices using Angular framework and languages like JavaScript and TypeScript. To handle with data there was used json-server. Project will be updated reguraly.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Use the node package manager (npm) to install angular-app.
 
-## Code scaffolding
+```bash
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+```javascript
+npm start
+```
+This command run both json server and angular server.
+## Views
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+https://github.com/msitek176/angular-app/assets/75749486/6b5b41dd-d0b0-416e-bce8-1d1a9228a97f
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
