@@ -1,0 +1,22 @@
+<app-button-back></app-button-back>
+<ng-container *ngIf="person; else blankPage">
+  <div class="d-flex flex-column align-items-center">
+    <div class="card text-center mb-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{person.name}}</h5>
+        <p class="card-text">Age: {{person.age}}</p>
+        <button class="btn btn-primary" [routerLink]="['/modify', person.id]">Modify</button>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<ng-template #blankPage>
+  <div class="d-flex flex-column align-items-center">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title mb-3">There is no details</h5>
+        <button class="btn btn-primary" [routerLink]="['/create']">Add new person</button>
+      </div>
+    </div>
+  </div>
+</ng-template>

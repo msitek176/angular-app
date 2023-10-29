@@ -1,0 +1,17 @@
+<ng-container *ngIf="isModal">
+  <div class="modal" tabindex="-1" id="successModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Success</h5>
+        </div>
+        <div class="modal-body">
+          <p>Form fulfilled properly</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" (click)="closeModal()">Go to list</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

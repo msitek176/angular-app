@@ -1,0 +1,19 @@
+<form [formGroup]="personForm" (ngSubmit)="onSubmit()">
+  <div class="d-flex flex-column justify-content-center align-content-center">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" formControlName="name" id="name" placeholder="Write name">
+      <span *ngIf="name?.errors?.['required'] && name?.touched">This field is required</span>
+      <span *ngIf="name?.errors?.['pattern'] && name?.touched">This field must contains only letters</span>
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Age</label>
+      <input type="number" class="form-control" formControlName="age" id="age" placeholder="Write age">
+      <span *ngIf="age?.errors?.['required'] && age?.touched">This field is required</span>
+      <span *ngIf="age?.errors?.['min'] && age?.touched">This field must be greater than 0</span>
+    </div>
+    <button class="btn btn-primary w-25 align-self-center" type="submit" [disabled]="!personForm.valid">Submit</button>
+  </div>
+</form>
+
+

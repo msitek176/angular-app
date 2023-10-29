@@ -1,0 +1,49 @@
+{
+  "people": [
+    {
+      "name": "Anne",
+      "id": 1,
+      "age": 32
+    },
+    {
+      "name": "John",
+      "age": 23,
+      "id": 2
+    },
+    {
+      "name": "Hanna",
+      "age": 39,
+      "id": 3
+    },
+    {
+      "name": "Mike",
+      "age": 5,
+      "id": 4
+    },
+    {
+      "name": "Yanko",
+      "age": 55,
+      "id": 5
+    },
+    {
+      "name": "Adam",
+      "age": 55,
+      "id": 6
+    },
+    {
+      "name": "Max",
+      "age": 25,
+      "id": 7
+    },
+    {
+      "name": "Robert",
+      "age": 12,
+      "id": 8
+    },
+    {
+      "name": "Fernando",
+      "age": 33,
+      "id": 9
+    }
+  ]
+}

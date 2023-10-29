@@ -1,0 +1,30 @@
+<ng-container *ngIf="(people$ | async) as people; else loading">
+  <ng-container *ngIf="people.length; else blankPage">
+    <div class="d-flex flex-column">
+      <h2 class="text-center">List of people</h2>
+      <ol class="list-group list-group-numbered mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start" *ngFor="let person of people">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">{{person.name}}</div>
+          </div>
+          <button class="btn btn-secondary mx-2" [routerLink]="['/details', person.id]">Details</button>
+          <button class="btn btn-primary" [routerLink]="['/modify', person.id]">Modify</button>
+        </li>
+      </ol>
+      <button class="btn btn-primary w-25 align-self-center" [routerLink]="['/create']">Add new person</button>
+    </div>
+  </ng-container>
+</ng-container>
+<ng-template #blankPage>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">There is no people</h5>
+      <button class="btn btn-primary" [routerLink]="['/create']">Add new person</button>
+    </div>
+  </div>
+</ng-template>
+<ng-template #loading>
+  <div class="d-flex flex-column text-center">
+    <h3 class="fw-bold">Loading...</h3>
+  </div>
+</ng-template>
